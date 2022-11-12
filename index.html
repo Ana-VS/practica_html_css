@@ -9,26 +9,26 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <img class="logo" src= "images/manolito.png" alt= "logo">
-            <span class="boton-menu">☰</span>
-                <ul>
-                  <li>
-                    <a class= "link" href= "#">Sobre mí</a>
-                  </li>
-                  <li>
-                    <a class= "link" href= "#">Mis skills</a>
-                  </li>
-                  <li>
-                    <a class= "link" href= "#">Contacto</a>
-                  </li>
-                </ul>
-        </nav>
-    </header>
-    <div class="">
-        <img src="images/la_pandilla.jpg" >
-        <h1>Portfolio Manolito</h1>
+    
+    <nav class= "navbar">
+        <img class= "logo" src= "images/manolito.png" alt= "logo">
+        <span class= "boton-menu">☰</span>
+            <ul class= "menu">
+                <li>
+                <a class= "link" href= "#">Sobre mí</a>
+                </li>
+                <li>
+                <a class= "link" href= "#">Mis skills</a>
+                </li>
+                <li>
+                <a class= "link" href= "#">Contacto</a>
+                </li>
+            </ul>
+    </nav>
+    
+    <div class="portada">
+        <img src= "images/la_pandilla.jpg" >
+        <h1 class= "titulo">Portfolio Manolito</h1>
     </div>
     <section>
         <h2>Sobre mí</h2>
@@ -40,16 +40,79 @@
             a tomar el aperitivo al "Tropezón"
         </p>
     </section>
+    <div class= "skills">
+        <h2>Qué me gusta</h2>
+        <p>Estudiar</p>
+        <div class= "contenedor">
+            <div class= "skill_estudiar ">10%</div>
+        </div>
+        
+        <p>El abuelo Nicolás</p>
+        <div class= "contenedor">
+            <div class= "skill_abuelo ">90%</div>
+        </div>
+
+        <p>Jugar con El Imbécil</p>
+        <div class= "contenedor">
+            <div class= "skill_jugar ">50%</div>
+        </div>
+
+        <p>Montar en el camión de papá</p>
+        <div class= "contenedor">
+            <div class= "skill_camion">70%</div>
+        </div>
+
+    </div>
+    <section>
+        <h2>¡Hey! ¿Quieres ponerte en contacto conmigo?</h2>
+        <form action="#" method= "post">
+            <div>
+                <label for= "nombre">Nombre</label>
+                <input required id= "nombre" name= "name" type= "text" placeholder= "Escribe tu nombre">
+            </div>
+            <div>
+                <label for= "apellido">Apellido</label>
+                <input required id= "apellido" name= "apellido" type= "text" placeholder= "Escribe tu apellido">
+            </div>
+            <div>
+                <label for="phone">Número de teléfono</label>
+                <input type= "tel" id= "phone" name= "phone" pattern= "^([0-9]+)" placeholder= "Teléfono">
+            </div>
+            <div>
+                <label for="github">GitHub username</label>
+                <input type= "text" id= "github" name= "github" pattern= "^@[^\s]+" placeholder="@username">
+            </div>
+            <div>
+                <label for= "bio">Comentarios</label>
+                <textarea required id= "bio"></textarea>
+            </div>
+            <fieldset>
+                <legend>¿Cómo me conociste?</legend>
+                <label for= "barrio">Carabanchel, ciudad sin ley🏙</label>
+                <input required id= "barrio" type= "radio" name= "choice" value= "barrio">
+
+                <label for="colegio">En el colegio 🏫</label>
+                <input required id= "colegio" type= "radio" name= "choice" value= "colegio">
+      
+                <label for= "parque">En el parque de El Ahorcado 🏞</label>
+                <input  required id= "parque" type= "radio" name= "choice" value= "parque">
+
+                <label for= "bar">En el bar El Tropezón 🍺🍷</label>
+                <input  required id= "bar" type= "radio" name= "choice" value= "bar">
+            </fieldset>
+            <input type= "submit" value= "¡Mándamelo!">
+        </form>
+    </section>
     <footer>
-        <nav>
+        <nav class= "footer">
             <div>
-                <a title= "Instagram" href= "https://www.instagram.com/manolitogafotass/?hl=es" target="_blank"><img class="logo" src= "images/instagram.png" alt= "Instagram"></a>
+                <a title= "Instagram" href= "https://www.instagram.com/manolitogafotass/?hl=es" target="_blank"><img class="png" src= "images/instagram.png" alt= "logo"></a>
             </div>
             <div>
-                <a title= "Facebook" href= "https://www.facebook.com/profile.php?id=100009003928971" target="_blank"><img class="logo" src= "images/facebook.png" alt= "Facebook"></a>
+                <a title= "Facebook" href= "https://www.facebook.com/profile.php?id=100009003928971" target="_blank"><img class="png" src= "images/facebook.png" alt= "logo"></a>
             </div>
             <div>
-                <a title= "Twitter" href= "https://twitter.com/Gafotas84" target="_blank"><img class="logo" src= "images/twitter.png" alt= "Twitter"></a>
+                <a title= "Twitter" href= "https://twitter.com/Gafotas84" target="_blank"><img class="png" src= "images/twitter.png" alt= "logo"></a>
             </div> 
         </nav>
     </footer>
