@@ -27,7 +27,7 @@
     </nav>
     
     <div class="portada">
-        <img src= "images/la_pandilla.jpg" >
+        <img src= "images/la_pandilla.jpg">
         <h1 class= "titulo">Portfolio Manolito</h1>
     </div>
     <section>
@@ -35,74 +35,82 @@
         <p>Me llamo Manolito García Moreno, pero por Manolito García Moreno no me conoce ni el Orejones López,
             que es mi mejor amigo, aunque algunas veces sea un cochino y un traidor.
             En Carabanchel, que es mi barrio, todo el mundo me conoce como Manolito Gafotas porque llevo gafas desde los 5 años.
-            Mi padre es camionero y viaja mucho y mi madre es famosa en el mundo mundialpor sus collejas.
+            Mi padre es camionero y viaja mucho y mi madre es famosa en el mundo mundial por sus collejas.
             Tengo un hermano, al que llamo cariñosamente "El Imbécil" y un abuelo, Nicolás Moreno, que baila pasodoble y me lleva 
             a tomar el aperitivo al "Tropezón"
         </p>
     </section>
+
     <div class= "skills">
         <h2>Qué me gusta</h2>
         <p>Estudiar</p>
         <div class= "contenedor">
-            <div class= "skill_estudiar ">10%</div>
+            <div class= "skill estudiar ">10%</div>
         </div>
         
         <p>El abuelo Nicolás</p>
         <div class= "contenedor">
-            <div class= "skill_abuelo ">90%</div>
+            <div class= "skill abuelo ">90%</div>
         </div>
 
         <p>Jugar con El Imbécil</p>
         <div class= "contenedor">
-            <div class= "skill_jugar ">50%</div>
+            <div class= "skill jugar ">50%</div>
         </div>
 
         <p>Montar en el camión de papá</p>
         <div class= "contenedor">
-            <div class= "skill_camion">70%</div>
+            <div class= "skill camion">70%</div>
         </div>
 
     </div>
-    <section>
+    
+    
+    <form action="#" method= "post" class= "formulario">
         <h2>¡Hey! ¿Quieres ponerte en contacto conmigo?</h2>
-        <form action="#" method= "post">
+        <div>
+            <label for= "nombre">Nombre</label>
+            <input required id= "nombre" name= "name" type= "text" placeholder= "Escribe tu nombre">
+        </div>
+        <div>
+            <label for= "apellido">Apellido</label>
+            <input required id= "apellido" name= "apellido" type= "text" placeholder= "Escribe tu apellido">
+        </div>
+        <div>
+            <label for="phone">Número de teléfono</label>
+            <input type= "tel" id= "phone" name= "phone" pattern= "^([0-9]+)" placeholder= "Teléfono">
+        </div>
+        <div>
+            <label for="github">GitHub username</label>
+            <input type= "text" id= "github" name= "github" pattern= "^@[^\s]+" placeholder="@username">
+        </div>
+        <div>
+            <label for= "bio">Comentarios</label>
+            <textarea required id= "bio"></textarea>
+        </div>
+        <fieldset class= "option">
+            <legend>¿Cómo me conociste?</legend>
             <div>
-                <label for= "nombre">Nombre</label>
-                <input required id= "nombre" name= "name" type= "text" placeholder= "Escribe tu nombre">
-            </div>
-            <div>
-                <label for= "apellido">Apellido</label>
-                <input required id= "apellido" name= "apellido" type= "text" placeholder= "Escribe tu apellido">
-            </div>
-            <div>
-                <label for="phone">Número de teléfono</label>
-                <input type= "tel" id= "phone" name= "phone" pattern= "^([0-9]+)" placeholder= "Teléfono">
-            </div>
-            <div>
-                <label for="github">GitHub username</label>
-                <input type= "text" id= "github" name= "github" pattern= "^@[^\s]+" placeholder="@username">
-            </div>
-            <div>
-                <label for= "bio">Comentarios</label>
-                <textarea required id= "bio"></textarea>
-            </div>
-            <fieldset>
-                <legend>¿Cómo me conociste?</legend>
                 <label for= "barrio">Carabanchel, ciudad sin ley🏙</label>
                 <input required id= "barrio" type= "radio" name= "choice" value= "barrio">
+            </div>
 
+            <div>
                 <label for="colegio">En el colegio 🏫</label>
                 <input required id= "colegio" type= "radio" name= "choice" value= "colegio">
-      
+            </div>
+            <div>
                 <label for= "parque">En el parque de El Ahorcado 🏞</label>
                 <input  required id= "parque" type= "radio" name= "choice" value= "parque">
-
+            </div>
+            <div>
                 <label for= "bar">En el bar El Tropezón 🍺🍷</label>
                 <input  required id= "bar" type= "radio" name= "choice" value= "bar">
-            </fieldset>
-            <input type= "submit" value= "¡Mándamelo!">
-        </form>
-    </section>
+            </div>
+        </fieldset>
+        <input type= "submit" value= "¡Mándamelo!">
+    </form>
+   
     <footer>
         <nav class= "footer">
             <div>
