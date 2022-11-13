@@ -117,6 +117,8 @@ h2, legend {
 }
 
 section {
+    margin-top: 25px;
+    margin-bottom: 25px;
     padding: 5px;
     line-height: 20px;
     font-size: 18px;
@@ -148,7 +150,7 @@ section {
 }
 
 .estudiar {
-    animation: fillestudiar 2s forwards;
+    animation: fillestudiar 3s forwards;
 }
 
 @keyframes fillestudiar {
@@ -157,7 +159,7 @@ section {
 }
 
 .abuelo {
-    animation: fillabuelo 2s forwards;
+    animation: fillabuelo 3s forwards;
 }
 
 @keyframes fillabuelo {
@@ -166,7 +168,7 @@ section {
 }
 
 .jugar {
-    animation: filljugar 2s forwards;
+    animation: filljugar 3s forwards;
 }
 
 @keyframes filljugar {
@@ -174,10 +176,46 @@ section {
     100% {width: 50%;}
 }
 .camion {
-    animation: fillcamion 2s forwards;
+    animation: fillcamion 3s forwards;
 }
 
 @keyframes fillcamion {
     0%{width: 0;}
     100% {width: 70%;}
+}
+
+.formulario {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column; 
+    padding: 20px;
+    margin-top: 25px;
+}
+
+.datos {
+    display: inline-block;
+    padding:10px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+input[type=text], input[type=tel], textarea {
+    border: 2px solid var(--primary-color);
+    border-radius: 10px;
+    width: 70%;
+}
+
+input[type=submit]{
+    background-color: var(--primary-color);
+    border: outset;
+    border-radius: 10px;
+    float: inline-start;
+    font-weight: 800;
+    transition: color 0.3s linear;
+}
+
+input[type=submit]:hover{
+    color: rgba(6, 35, 109, 0.267);
 }

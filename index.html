@@ -68,26 +68,25 @@
     
     <form action="#" method= "post" class= "formulario">
         <h2>¡Hey! ¿Quieres ponerte en contacto conmigo?</h2>
-        <div>
-            <label for= "nombre">Nombre</label>
-            <input required id= "nombre" name= "name" type= "text" placeholder= "Escribe tu nombre">
-        </div>
-        <div>
-            <label for= "apellido">Apellido</label>
-            <input required id= "apellido" name= "apellido" type= "text" placeholder= "Escribe tu apellido">
-        </div>
-        <div>
-            <label for="phone">Número de teléfono</label>
-            <input type= "tel" id= "phone" name= "phone" pattern= "^([0-9]+)" placeholder= "Teléfono">
-        </div>
-        <div>
-            <label for="github">GitHub username</label>
-            <input type= "text" id= "github" name= "github" pattern= "^@[^\s]+" placeholder="@username">
-        </div>
-        <div>
-            <label for= "bio">Comentarios</label>
-            <textarea required id= "bio"></textarea>
-        </div>
+        
+                <label class= "datos" for= "nombre">Nombre</label>
+                <input required id= "nombre" name= "name" type= "text" placeholder= "Escribe tu nombre">
+            
+                <label class= "datos" for= "apellido">Apellido</label>
+                <input required id= "apellido" name= "apellido" type= "text" placeholder= "Escribe tu apellido">
+         
+            
+                <label class= "datos" for="phone">Número de teléfono</label>
+                <input type= "tel" id= "phone" name= "phone" pattern= "^([0-9]+)" placeholder= "Teléfono">
+        
+        
+                <label class= "datos" for="github">GitHub username</label>
+                <input type= "text" id= "github" name= "github" pattern= "^@[^\s]+" placeholder="@username">
+        
+       
+            <label class= "datos" for= "bio">Comentarios</label>
+            <textarea required id= "bio" maxlength= "180" placeholder= "¡Ojo! Máximo 180 caracteres"></textarea>
+            
         <fieldset class= "option">
             <legend>¿Cómo me conociste?</legend>
             <div>
@@ -108,7 +107,7 @@
                 <input  required id= "bar" type= "radio" name= "choice" value= "bar">
             </div>
         </fieldset>
-        <input type= "submit" value= "¡Mándamelo!">
+        <input type= "submit" value= "Enviar">
     </form>
    
     <footer>
